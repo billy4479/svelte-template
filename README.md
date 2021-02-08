@@ -1,29 +1,31 @@
-# New Project
+# Svelte Template
 
-> ✨ Bootstrapped with Create Snowpack App (CSA).
+This is a template repo to bootstrap your Svelte project with some extra juicy stuff in it.
 
-## Available Scripts
+By default you have Typescript, ES-Lint (with the airbnb preset), Prettier, Babel (for Typescript and tests), Jest and Snowpack.
 
-### npm start
+This is meant to be used with `yarn` but you _should_ be able to use also `npm`.
 
-Runs the app in the development mode.
-Open http://localhost:8080 to view it in the browser.
+## Get this template
 
-The page will reload if you make edits.
-You will also see any lint errors in the console.
+You can just use the big green button "Use this template" or use `degit`
 
-### npm test
+```bash
+npx degit billy4479/svelte-template my-svelte-app
+```
 
-Launches the test runner in the interactive watch mode.
-See the section about running tests for more information.
+Once you have the files `cd` into the cloned directory and run
 
-### npm run build
+```bash
+yarn
 
-Builds a static copy of your site to the `build/` folder.
-Your app is ready to be deployed!
+# To spin-up a dev server
+yarn start
 
-**For the best production performance:** Add a build bundler plugin like [@snowpack/plugin-webpack](https://github.com/snowpackjs/snowpack/tree/main/plugins/plugin-webpack) or [snowpack-plugin-rollup-bundle](https://github.com/ParamagicDev/snowpack-plugin-rollup-bundle) to your `snowpack.config.json` config file.
+# To build for production
+yarn build
 
-### Q: What about Eject?
+# To run tests
+yarn test
 
-No eject needed! Snowpack guarantees zero lock-in, and CSA strives for the same.
+```
