@@ -1,13 +1,29 @@
 <script lang="ts">
-  export let name: string;
+  import Greeter from './greeter.svelte';
 
-  let buttonText = 'Button';
+  let counter = 0;
 
   function handleClick() {
-    buttonText = 'Button Clicked';
+    counter++;
   }
 </script>
 
-<h1>Hello {name}!</h1>
+<Greeter who="world" />
 
-<button on:click={handleClick}>{buttonText}</button>
+<button
+  on:click={handleClick}
+  class="bg-red rounded border border-black p-2 m-10"
+  >Button clicked {counter} times</button
+>
+
+<style global type="text/postcss">
+  @tailwind base;
+  @tailwind components;
+  @tailwind utilities;
+
+  body {
+    width: 85%;
+    margin: 5% auto;
+    text-align: center;
+  }
+</style>

@@ -1,8 +1,9 @@
 {
   "include": ["src", "types"],
+  "$schema": "https://json.schemastore.org/tsconfig",
   // "extends": "@tsconfig/svelte/tsconfig.json",
   "compilerOptions": {
-    "module": "esnext",
+    "module": "ESNext",
     "target": "esnext",
     "moduleResolution": "node",
     "jsx": "preserve",
@@ -17,13 +18,16 @@
     /* noEmit - Snowpack builds (emits) files, not tsc. */
     "noEmit": true,
     /* Additional Options */
-    "strict": true,
+    "strict": false,
+    "esModuleInterop": true,
     "skipLibCheck": true,
     "forceConsistentCasingInFileNames": true,
     "resolveJsonModule": true,
     "useDefineForClassFields": true,
     "allowSyntheticDefaultImports": true,
     "importsNotUsedAsValues": "error",
-    "types": ["jest", "svelte", "node"]
+    "isolatedModules": true,
+    "sourceMap": true,
+    "types": ["jest", "svelte", "snowpack-env"]
   }
 }
