@@ -1,5 +1,4 @@
 {
-  "name": "svelte-template",
   "version": "1.0.0",
   "scripts": {
     "start": "snowpack dev",
@@ -12,6 +11,8 @@
     "svelte": "^3.24.0"
   },
   "devDependencies": {
+    "@babel/core": "^7.12.13",
+    "@babel/preset-env": "^7.12.13",
     "@babel/preset-typescript": "^7.12.13",
     "@snowpack/plugin-babel": "^2.1.6",
     "@snowpack/plugin-dotenv": "^2.0.5",
@@ -21,6 +22,9 @@
     "@snowpack/web-test-runner-plugin": "^0.2.0",
     "@testing-library/jest-dom": "^5.11.9",
     "@testing-library/svelte": "^3.0.3",
+    "@tsconfig/svelte": "^1.0.10",
+    "@types/jest": "^26.0.20",
+    "@types/node": "^14.14.25",
     "@types/snowpack-env": "^2.3.2",
     "@typescript-eslint/eslint-plugin": "^4.14.2",
     "@typescript-eslint/parser": "^4.14.2",
@@ -47,15 +51,13 @@
           "preprocess": true
         }
       ],
-      "^.+\\.ts$": "ts-jest"
+      "^.+\\.ts$": "ts-jest",
+      "^.+\\.js$": "babel-jest"
     },
     "moduleFileExtensions": [
       "js",
       "ts",
       "svelte"
-    ],
-    "setupFilesAfterEnv": [
-      "@testing-library/jest-dom/extend-expect"
     ]
   }
 }
