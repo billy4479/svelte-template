@@ -19,9 +19,10 @@ module.exports = {
     // "bundle": true,
     bundle: true,
     splitting: false,
-    manifest: true,
+    manifest: false,
     minify: true,
     treeshake: true,
+    sourcemap: false,
     target: 'es2020',
   },
   packageOptions: {

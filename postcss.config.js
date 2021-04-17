@@ -1,3 +1,4 @@
+/* eslint-disable global-require */
 const purgecss = require('@fullhuman/postcss-purgecss')({
   content: ['./src/**/*.svelte', './src/**/*.html'],
   whitelistPatterns: [/svelte-/],
