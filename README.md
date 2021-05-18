@@ -2,9 +2,9 @@
 
 This is a template repo to bootstrap your Svelte project with some extra juicy stuff in it.
 
-By default you have Typescript, PostCSS with Tailwind, ES-Lint (with the airbnb preset), Prettier, Babel (for Typescript and tests), Jest and Snowpack.
+By default you have Typescript, PostCSS with Tailwind, ES-Lint (with the airbnb preset), Prettier and Vite.
 
-This is meant to be used with `pnpm` but you _should_ be able to use also `npm` or `yarn`.
+This is meant to be used with `yarn` but you _should_ be able to use also `npm` or `pnpm`.
 
 ## Get this template
 
@@ -17,17 +17,13 @@ pnpx degit billy4479/svelte-template my-svelte-app
 Once you have the files `cd` into the cloned directory and run
 
 ```bash
-pnpm install
+yarn
 
 # To spin-up a dev server
-pnpm run start
+yarn start
 
 # To build for production
-pnpm run build
-
-# To run tests
-pnpm test
-
+yarn build
 ```
 
 ### VSCode
