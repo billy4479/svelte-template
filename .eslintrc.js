@@ -24,11 +24,5 @@ module.exports = {
       files: ['*.svelte'],
       processor: 'svelte3/svelte3',
     },
-    {
-      files: ['*.test.ts'],
-      rules: {
-        'no-undef': 'off',
-      },
-    },
   ],
 };
