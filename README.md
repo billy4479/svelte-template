@@ -2,7 +2,7 @@
 
 This is a template repo to bootstrap your Svelte project with some extra juicy stuff in it.
 
-By default you have Typescript, PostCSS with Tailwind, ES-Lint (with the airbnb preset), Prettier and Vite.
+By default you have Typescript, WindiCSS, ES-Lint (with the Airbnb preset), Prettier and Vite.
 
 This is meant to be used with `yarn` but you _should_ be able to use also `npm` or `pnpm`.
 
