@@ -4,7 +4,7 @@ This is a template repo to bootstrap your Svelte project with some extra juicy s
 
 By default you have Typescript, WindiCSS, ES-Lint (with the Airbnb preset), Prettier and Vite.
 
-This is meant to be used with `yarn` but you _should_ be able to use also `npm` or `pnpm`.
+This is meant to be used with `pnpm` but you _should_ be able to use also `npm` or `yarn`.
 
 ## Get this template
 
@@ -17,13 +17,13 @@ pnpx degit billy4479/svelte-template my-svelte-app
 Once you have the files `cd` into the cloned directory and run
 
 ```bash
-yarn
+pnpm i
 
 # To spin-up a dev server
-yarn start
+pnpm run dev
 
 # To build for production
-yarn build
+pnpm run build
 ```
 
 ### VSCode
