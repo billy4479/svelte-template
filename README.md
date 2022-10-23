@@ -25,11 +25,3 @@ pnpm run dev
 # To build for production
 pnpm run build
 ```
-
-### VSCode
-
-If you use VSCode make sure to add this line to you `settings.json`
-
-```json
-"eslint.lintTask.enable": true
-```
